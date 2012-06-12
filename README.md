@@ -26,7 +26,9 @@ http://tinsuke.wordpress.com/2011/11/01/how-to-compile-and-use-tesseract-3-01-on
 I have included an index.html with an example.
 
 It uses the camera function with destinationType.FILE_URI (IMPORTANT!!!)
-// A button will call this function
+
+
+            // A button will call this function
             //
             function capturePhoto() {
                 // Take picture using device camera and retrieve image as base64-encoded string
@@ -34,7 +36,7 @@ It uses the camera function with destinationType.FILE_URI (IMPORTANT!!!)
                                             destinationType: destinationType.FILE_URI });
             }
             
-// Call the plugin when a photo is successfully retrieved
+            // Call the plugin when a photo is successfully retrieved
             //
             function onPhotoURISuccess(imageURI) {
                 callNativePlugin({url_imagen: imageURI});
