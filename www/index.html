@@ -59,6 +59,9 @@
             
             function nativePluginResultHandler (result) { 
                 alert("ok: "+result);
+                var resultado = document.getElementById("resultado");
+                //alert(resultado.innerHTML);
+                resultado.innerHTML = result;
             } 
             
             function nativePluginErrorHandler (error) { 
@@ -70,6 +73,7 @@
     <body>
         <button onclick="capturePhoto();">Capture Photo</button> <br>
         <button onclick="capturePhotoEdit();">Capture Editable Photo</button> <br>
+        <p id='resultado'>hola</p>
         
     </body>
 </html>
