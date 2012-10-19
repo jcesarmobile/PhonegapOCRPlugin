@@ -15,7 +15,7 @@ drag OCRPlugin.h, OCRPlugin.m, claseAuxiliar.h and claseAuxiliar.mm
 
 drag OCRPlugin.js to your www folder
 
-Add the plugin to cordova.xml
+Add the plugin to Cordova.plist
 
 com.jcesarmobile.OCRPlugin   OCRPlugin
 
