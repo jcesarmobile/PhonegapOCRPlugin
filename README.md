@@ -15,9 +15,13 @@ drag OCRPlugin.h, OCRPlugin.m, claseAuxiliar.h and claseAuxiliar.mm
 
 drag OCRPlugin.js to your www folder
 
-Add the plugin to Cordova.plist
+Add the plugin to Cordova.plist with this values
 
 com.jcesarmobile.OCRPlugin   OCRPlugin
+
+If you use a newer version that uses config.xml instead Codova.plist add this line into the plugins section
+<plugin name="com.jcesarmobile.OCRPlugin" value="OCRPlugin" />
+
 
 
 Thanks to suzuki for compiling tesseract in this post
@@ -55,3 +59,6 @@ It uses the camera function with destinationType.FILE_URI (IMPORTANT!!!)
                 alert("error: "+error);
             }
 
+
+
+Known issuies, it doesn't work on armv7s architectures.
