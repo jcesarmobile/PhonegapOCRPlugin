@@ -1,19 +1,19 @@
-PhonegapOCRPlugin
+PhonegapOCRPlugin iOS
 =================
 
-ocr plugin for phonegap using tesseract
+ocr plugin for phonegap iOS using tesseract
 
-drag the tessdata folder to your phonegap project
+drag the tessdata folder to your phonegap project in Xcode
 mark the checkbox "copy items into destination group"
 Choose the radio-button "Create folder references for any added folders"
 
-drag the dependencies folder to your phonegap project
+drag the dependencies folder to your phonegap project in Xcode
 mark the checkbox "copy items into destination group"
 Choose the radio-button "Created groups for any added folders" 
 
-drag OCRPlugin.h, OCRPlugin.m, claseAuxiliar.h and claseAuxiliar.mm 
+drag OCRPlugin.h, OCRPlugin.m, claseAuxiliar.h and claseAuxiliar.mm to your project in Xcode
 
-drag OCRPlugin.js to your www folder
+drag OCRPlugin.js to your www folder (open the www folder in finder and drag there)
 
 Add the plugin to Cordova.plist with this values
 
