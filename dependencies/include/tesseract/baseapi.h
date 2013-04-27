@@ -30,8 +30,7 @@
 #include "unichar.h"
 #include "tesscallback.h"
 #include "publictypes.h"
-#include "pageiterator.h"
-#include "resultiterator.h"
+
 
 template <typename T> class GenericVector;
 class PAGE_RES;
@@ -226,6 +225,11 @@ class TESS_API TessBaseAPI {
    * as dependencies of other loaded languages.
    */
   void GetLoadedLanguagesAsVector(GenericVector<STRING>* langs) const;
+
+  /**
+   * Returns the available languages in the vector of STRINGs.
+   */
+  void GetAvailableLanguagesAsVector(GenericVector<STRING>* langs) const;
 
   /**
    * Init only the lang model component of Tesseract. The only functions
@@ -435,7 +439,7 @@ class TESS_API TessBaseAPI {
    * has not been subjected to a call of Init, SetImage, Recognize, Clear, End
    * DetectOS, or anything else that changes the internal PAGE_RES.
    */
-  PageIterator* AnalyseLayout();
+
 
   /**
    * Recognize the image from SetAndThresholdImage, generating Tesseract
@@ -496,7 +500,7 @@ class TESS_API TessBaseAPI {
    * has not been subjected to a call of Init, SetImage, Recognize, Clear, End
    * DetectOS, or anything else that changes the internal PAGE_RES.
    */
-  ResultIterator* GetIterator();
+
 
   /**
    * Get a mutable iterator to the results of LayoutAnalysis and/or Recognize.
