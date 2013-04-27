@@ -3,9 +3,15 @@ PhonegapOCRPlugin iOS
 
 ocr plugin for phonegap iOS using tesseract
 
+HOW TO USE:
+
 drag the tessdata folder to your phonegap project in Xcode
 mark the checkbox "copy items into destination group"
 Choose the radio-button "Create folder references for any added folders"
+The tessdata contains a trained data for english language. 
+If you want to use other language download the language file from http://code.google.com/p/tesseract-ocr/downloads/list if available and change the "eng"
+to the language code in this line inside the init function in claseAuxiliar.mm
+tesseract->Init([dataPath cStringUsingEncoding:NSUTF8StringEncoding], "eng");
 
 drag the dependencies folder to your phonegap project in Xcode
 mark the checkbox "copy items into destination group"
@@ -61,4 +67,3 @@ It uses the camera function with destinationType.FILE_URI (IMPORTANT!!!)
 
 
 
-Known issuies, it doesn't work on armv7s architectures.
