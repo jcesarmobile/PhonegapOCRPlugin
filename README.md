@@ -26,6 +26,8 @@ Add the plugin to Cordova.plist with this values
 com.jcesarmobile.OCRPlugin   OCRPlugin
 
 If you use a newer version that uses config.xml instead Codova.plist add this line into the plugins section
+
+
 <plugin name="com.jcesarmobile.OCRPlugin" value="OCRPlugin" />
 
 
