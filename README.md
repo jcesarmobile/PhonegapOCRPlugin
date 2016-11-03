@@ -1,6 +1,8 @@
 PhonegapOCRPlugin iOS
 =================
 
+***This plugin is deprecated and it's not maintained. But I've created a new plugin cordova-plugin-tesseract-ocr (https://github.com/jcesarmobile/cordova-plugin-tesseract-ocr). It's still a work in progress***
+
 ocr plugin for phonegap iOS using tesseract
 
 HOW TO USE:
